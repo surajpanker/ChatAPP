@@ -3,11 +3,11 @@ const express= require('express');
 const bodyParser = require('body-parser');//for 
 const mongoose = require('mongoose');
 //const config = require('./config.json');
-const config = require('./config/keys');
+const config = require('./config/dev');
 require('./models/Registration');
 require('./models/Demand');
 require('./models/Cupon');
-//mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //mongoose.connect('mongodb+srv://root:root@cluster0-2cesk.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
