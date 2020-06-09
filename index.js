@@ -3,7 +3,7 @@ const express= require('express');
 const bodyParser = require('body-parser');//for 
 const mongoose = require('mongoose');
 //const config = require('./config.json');
-const config = require('./config/dev');
+const config = require('./config/keys');
 require('./models/Registration');
 require('./models/Demand');
 require('./models/Cupon');
