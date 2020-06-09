@@ -7,7 +7,7 @@ const config = require('./config/keys');
 require('./models/Registration');
 require('./models/Demand');
 require('./models/Cupon');
-mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const app = express();
