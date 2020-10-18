@@ -1,1 +1,1 @@
-Using MERN stack and also handling conversation using nodejs
+Using JS and HTML and CSS
